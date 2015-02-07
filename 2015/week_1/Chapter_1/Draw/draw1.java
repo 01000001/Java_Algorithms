@@ -1,4 +1,5 @@
-public class draw1{
+public class draw1
+{
 
 	public static void main(String[] args){
 
@@ -7,7 +8,9 @@ public class draw1{
 		StdDraw.setYscale(0, N*N);
 		StdDraw.setPenRadius(.01);
 		for (int i = 1; i <= N; i++){
-			StdDraw.point(i,i);
+			StdDraw.point(i, i);
+			StdDraw.point(i, i*i);
+   			StdDraw.point(i, i*Math.log(i));
 		}
 
 	}
